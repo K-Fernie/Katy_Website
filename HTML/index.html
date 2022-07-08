@@ -14,7 +14,7 @@
     />
     <link rel="stylesheet" href="../CSS/site-stylesheet.css" />
     <link rel="stylesheet" href="../CSS/home-stylesheet.css" />
-    <script src="../JS/home-page.js"></script>
+    
     <title>Cult of Code Homepage</title>
   </head>
   <body>
@@ -58,27 +58,36 @@
       <!--Flexbox with two sections side by side/ Deck of cards & hand display-->
       <section id="card_deck">
         <!--deck of cards-->
-        <section id="deck">
+        <section class="deck">
+
           <div class="first card">
-            <a href="#"
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" target="_blank"
               ><img src="../Images/Magic_card_back.png" alt="card" class="card"
             /></a>
           </div>
+
           <div class="second card">
-            <a href="#"
-              ><img src="../Images/Magic_card_back.png" alt="card" class="card"
-            /></a>
+            <div class="card__face card__face--front"><img src="../Images/Magic_card_back.png" alt="card" class="card"
+              /></div>
+            <div class="card__face card__face--back"><img src="../Images/About_Me.png" alt="year 1 goal" class="card"></div>
           </div>
+
           <div class="third card">
-            <a href="#"
-              ><img src="../Images/Magic_card_back.png" alt="card" class="card"
-            /></a>
+            <div class="card__face card__face--front"><img src="../Images/Magic_card_back.png" alt="card" class="card"
+              /></div>
+            <div class="card__face card__face--back"><img src="../Images/About_Me.png" alt="year 1 goal" class="card"></div>
           </div>
+
           <div class="fourth card">
-            <a href="#"
-              ><img src="../Images/Magic_card_back.png" alt="card" class="card"
-            /></a>
+            <div class="card__face card__face--front">
+              <img src="../Images/Magic_card_back.png" alt="card" class="card"
+            />
+            </div>
+            <div class="card__face card__face--back">
+              <img src="../Images/About_Me.png" alt="year 1 goal" class="card">
+            </div>
           </div>
+
       </section>
     </main>
     <!--Footer Section: Contains links to personal sites-->
@@ -96,5 +105,7 @@
         ><img src="/Images/icons8-twitter-circled-48 (1).png" alt="Twitter"
       /></a>
     </footer>
+  
+    <script src="../JS/home-page.js"></script>
   </body>
 </html>

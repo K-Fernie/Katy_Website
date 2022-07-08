@@ -94,9 +94,10 @@ ul li a img{
     margin: 25px;
   }
 
-  #deck{
+  .deck{
     position: relative;
     padding-bottom: 300px;
+    perspective: 1000px;
   }
 
   .card {
@@ -104,9 +105,56 @@ ul li a img{
     width:10em;
     height:15em;
     border-radius:15px;
+    background-color: white;
     box-shadow: 0 0 6px rgba(0,0,0,0.9);
     position:absolute;
     transition:transform 0.5s ease-out;
+    transform-style: preserve-3d;
+    cursor: pointer;
+  }
+
+  .card__face{
+    position: absolute; 
+    width: 100%;
+    height: 100%; 
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
+  }
+
+  .card__face--front{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card__face--back{
+    transform: rotateY(180deg);
+  }
+
+  .fourth.is-flipped{
+    margin-left: 725px;
+    margin-top: 20px;
+    transition: 1s;
+    transform: rotateY(180deg) rotate(-15deg);
+  }
+
+  .third.is-flipped{
+    margin-left: 575px;
+    transition: 1s;
+    transform: rotateY(180deg);
+    z-index: 5;
+
+  }
+
+  .second.is-flipped{
+    margin-left: 425px;
+    margin-top: 20px;
+    transition: 1s; 
+    transform: rotateY(180deg) rotate(15deg);
+    z-index: 6;
   }
 
 .card:nth-child(2) {left:20px;}
