@@ -21,7 +21,7 @@ header{
     margin-left: auto;
     padding: auto;
     margin-bottom: 100px;
-    background-color:rgba(36,41,16, .99) ;
+    background-color:rgba(36,41,16, .9) ;
     border-top-left-radius: 50px;
     border-bottom-right-radius: 50px;
     box-shadow: 10px 10px 7px rgba(0,0,0,.7);
@@ -70,7 +70,7 @@ ul li a img{
     background-image: url(/Images/Background-Brown\ Worn.jpg);
     color: transparent;
     -webkit-background-clip: text;
-    
+    background-clip: text;
   }
 
  .middle_separator{
@@ -84,17 +84,14 @@ ul li a img{
     padding-bottom: 25px;
     margin-left: 45px;
     margin-right: 800px;
-    border-radius: 25px;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;3
   }
 
   #card_deck{
     display: flex; 
     flex-wrap: wrap;
     margin: 25px;
-  }
-
-  #card_deck section{
-    margin-right: 25px;
   }
 
   #deck{
@@ -106,8 +103,6 @@ ul li a img{
     display:block;
     width:10em;
     height:15em;
-    background:white;
-    border:1px solid black;
     border-radius:15px;
     box-shadow: 0 0 6px rgba(0,0,0,0.9);
     position:absolute;
