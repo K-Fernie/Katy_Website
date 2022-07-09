@@ -1,3 +1,6 @@
+:root{
+  --box-shadow: 10px 10px 7px rgba(0,0,0,.7);
+}
 #search_text{
     float: right;
     margin-right: 50px;
@@ -11,7 +14,7 @@
   margin-left: 45px;
   margin-bottom: 50px;
   border-radius: 20px;
-  box-shadow: 10px 10px 7px rgba(0,0,0,.7);
+  box-shadow: var(--box-shadow);
 }
 
 header{
@@ -24,7 +27,7 @@ header{
     background-color:rgba(36,41,16, .9) ;
     border-top-left-radius: 50px;
     border-bottom-right-radius: 50px;
-    box-shadow: 10px 10px 7px rgba(0,0,0,.7);
+    box-shadow: var(--box-shadow);
 }
 
 ul{
@@ -54,7 +57,7 @@ ul li a img{
   }
 
   ul li a img:hover,ul li a img:focus{
-    box-shadow:10px 10px 7px rgba(0,0,0,.7);
+    box-shadow:var(--box-shadow);
     transform: scale(1.25) rotate(3deg);
     position:relative;
     z-index:5;
