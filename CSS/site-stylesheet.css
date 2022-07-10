@@ -1,14 +1,14 @@
-html{
-    background-image: url(https://images.unsplash.com/photo-1528328791021-a7d71822ffcd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80);
+html {
+    background-image: url(../Images/Background-Brown\ Worn.jpg);
 }
 
-footer{
-    display: flex; 
+footer {
+    display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin: 25px;
 }
 
-footer a{
+footer a {
     margin-right: 50px;
 }
