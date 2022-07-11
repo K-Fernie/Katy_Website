@@ -1,4 +1,74 @@
-div {
-    background-color: beige;
-    padding: 0;
+:root {
+    --box-shadow: 10px 10px 7px rgba(0, 0, 0, .7);
+}
+
+.wrapper {
+    display: flex;
+    margin-right: -25px;
+}
+
+.wrapper>* {
+    flex-basis: 100%
+}
+
+#main_image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#content {
+    padding: 25px;
+    background-color: rgba(24, 47, 81, .8);
+    box-shadow: var(--box-shadow);
+    border-radius: 25px;
+    color: white;
+}
+
+.personal_img {
+    height: 350px;
+    width: 350px;
+    border-radius: 50%;
+    box-shadow: var(--box-shadow);
+
+}
+
+header {
+    height: 100px;
+    width: 750px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: auto;
+    margin-bottom: 100px;
+    background-color: rgba(36, 41, 16, .9);
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    box-shadow: var(--box-shadow);
+}
+
+#title_font {
+    font-family: 'Uncial Antiqua', cursive;
+    padding-top: 15px;
+    text-align: center;
+    font-size: 3em;
+    letter-spacing: 5px;
+    color: #fff;
+}
+
+.connect_header {
+    height: 100px;
+    width: 750px;
+    background-color: rgba(36, 41, 16, .9);
+    margin-left: -15px;
+    border-bottom-right-radius: 50px;
+    box-shadow: var(--box-shadow);
+}
+
+#connect_with_me {
+    font-family: 'Uncial Antiqua', cursive;
+    padding-top: 15px;
+    text-align: center;
+    font-size: 2em;
+    letter-spacing: 5px;
+    color: #fff;
 }
